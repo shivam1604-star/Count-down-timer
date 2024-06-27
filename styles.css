@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff7e5f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #feb47b;
+}
+
+.countdown {
+    display: flex;
+    gap: 20px;
+}
+
+.time-section {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: pulse 1.5s infinite;
+}
+
+.time {
+    font-size: 50px;
+    display: block;
+}
+
+.label {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
